@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exam</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="circel.css">
+</head>
+<body>
+    <main class="content-grid unselectable" >
+
+        <div class="box_start   flex" id="box_start" >
+
+
+            <button  class="btn_Start " onclick="start()" >Start Exam</button>
+
+
+            
+
+
+        </div>
+
+
+        <div  class="hidden end_Box" id="lastbox" >
+
+            <div class="grid_End " >
+
+                <div class="result_Box_Frist" >
+
+                    <h2 class="examresultfontheader" >Exam result</h2>
+
+                    <div class="endflexshort" >
+                        <p  >Points</p>
+                        <p class="p_P" ><span id="point_first">?</span> / <span id="point_sec" >?</span></p>
+                    </div>
+
+                    <div class="endflexshort" >
+                        <p>Duration</p>
+                        <p class="p_P" ><span id="secsaeeat"></span>  min <span id="minsaeeat" ></span> s</p>
+                    </div>
+
+                    <div  class="end_line_1"   >      </div>
+                    <div  class="end_line_2"   >      </div>
+                    <div  class="end_line_3"   >      </div>
+
+
+
+                </div>
+
+             <div class="gauge">
+             
+
+            <span class="addad_font_gulac"  ><span id="gulac_number" ></span> </span>  <span class="addad_font_gulac" >% </span>
+  
+             </div>
+
+            </div>
+
+            <div> <h2 class="asnwer_header_end" ><SPAN style="color: rgb(0, 110, 255);" >A</SPAN>ns<SPAN style="color: rgb(0, 110, 255);" >w</SPAN>er<SPAN style="color: rgb(0, 110, 255);" >s</SPAN></h2></div>
+
+            <div class="asnwrs_grid" >
+
+                <div class="flex" > 
+                    <p  > Correct </p>
+                    <div class="correct_end" id="ans_1" >?</div>
+                </div>
+
+                <div class="flex" > 
+                    <p  >  Late </p>
+                    <div class="correct_end" id="ans_2" >?</div>
+                </div>
+
+                <div class="flex inc" > 
+                    <p  > incorrect </p>
+                    <div class="correct_end" id="ans_3" >?</div>
+                </div>
+
+
+
+
+            </div>
+           
+            <div class="fullend_line"   >   </div>
+
+            <h2 class="ta_head" >True asnwers </h2>
+            <h2 style="color: rgb(76, 92, 122);" class="asnwersss"  id="helper1"> </h2>
+            <h2 class="ta_head" >false asnwers </h2>
+            <h2 style="color: rgb(109, 55, 86);" class="asnwersss"  id="helper"> </h2>
+
+        </div>
+   
+
+
+        <div class="main_box hidden" id="main_Box" >
+
+           <div class="header_box_main" >
+            <div class="grid_timeline " style="margin: 15px; "  >
+
+                <p class="header_tytel" >  quiz Application</p>
+
+                <div class="tineline_box flex_TIME" >
+                    <p class="timeline_maintext" >Time left</p>
+                    <div class="timeline_inner" id="timer_shower" >  15 </div>
+
+                </div>
+           </div>
+
+          <div class="timeline_home_line" >
+            <div class="timeline_line" id="timeline_line" > </div>
+          </div>
+
+            </div>
+
+
+            <div class="exam_box" >
+            <div class="exam_tytel" >
+                <h2 class="exam_header" > <span id="question_number_Shower" ></span> <span id="question_exam" ></span> </h2>
+            </div>
+
+            <div class="btn_holder_div"  >
+
+                
+                <div > <button class="btn_asnwer" id="btn_1" value="1" onclick="click_1()" > 1   </button></div>
+
+                <div > <button class="btn_asnwer" id="btn_2" value="2" onclick="click_2()" >  2  </button></div>
+
+                <div > <button class="btn_asnwer" id="btn_3" value="3" onclick="click_3()" >  3  </button></div>
+
+                <div > <button class="btn_asnwer" id="btn_4" value="4" onclick="click_4()" >  4  </button></div>
+
+
+            </div>
+            </div>
+            <div class="line" >       </div>
+
+            <div class="grid_submit" >
+
+
+                <div class="question_cunter" > <span id="first_q" ></span> of <span id="last_q" ></span> question</div>
+
+                <button class="btn_submit" onclick="submit()"  > Submit</button>
+
+
+
+            </div>
+
+               
+
+            
+        
+ 
+        </div>
+
+        <h2 style="color: rgb(255, 0, 98);"  id="helper"> </h2>
+        <h2 style="color: rgb(0, 255, 76);"  id="helper1"> </h2>
+
+    </main>
+    
+</body>
+</html>
+
+<script src="script.js" > </script>
